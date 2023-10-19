@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+
+:root{
+    --primary-font: 'Roboto', san-serif;
+    --secondary-font: 'Poppins', san-serif;
+    --primary-color: #191c23;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.hero-section{
+    background-image: url(Assets/Hero\ Background.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Nav Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5em;
+}
+
+.logo{
+    width: 30%;
+    padding-left: 2.7em;
+}
+.logo img{
+    width: 40%;
+}
+
+.menu-items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+}
+.menu-items a{
+    text-decoration: none;
+    font-family: var(--primary-font);
+    font-size: 16px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+.menu-items a:hover{
+    background-color: #191c230c;
+    padding: 0.6em;
+    border-radius: 10px;
+    transition: 400ms ease-in-out;
+}
+
+nav .extra-icons{
+    width: 30%;
+}
+.extra-icons{
+    text-align: end;
+    padding-right: 6em;
+}
+.extra-icons img{
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+/* Hero info */
+.top-row{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 250px;
+}
+.top-row .model{
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    letter-spacing: 3px;
+    font-weight: 550;
+}
+.top-row .pricing{
+    font-family: var(--primary-font);
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+.hero-info p{
+    font-family: var(--primary-font);
+    font-size: 18px;
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+.bottom-row{
+    text-align: center;
+}
+.btns{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.btns button{
+    padding: 16px 120px;
+    border-radius: 5px;
+    border: none;
+    font-family: var(--primary-font);
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btns button:nth-child(1) {
+    background-color: #dfddddb0;
+}
+.btns button:nth-child(2){
+    color: white;
+    background-color: #191c23cb;
+}
+
+.bottom-row p{
+    margin-bottom: 8px;
+}
+
+.bottom-row a{
+    color: var(--primary-color);
+    font-size: 1;
+    font-family: var(--primary-font);
+}
+.bottom-row a:hover{
+    text-decoration: underline 2px;
+    color: var(--primary-color);
+}
+
